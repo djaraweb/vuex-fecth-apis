@@ -1,18 +1,26 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <ListUsers :arrayUsers="getArrayUsers" />
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import { mapGetters, mapActions } from "vuex";
+import ListUsers from "@/components/ListUsers.vue";
 
 export default {
-  name: 'Home',
+  name: "Home",
   components: {
-    HelloWorld
+    ListUsers
+  },
+  computed: {
+    ...mapGetters(["getArrayUsers"])
+  },
+  methods: {
+    ...mapActions(["getApiUsers"])
+  },
+  created() {
+    this.getApiUsers();
   }
-}
+};
 </script>
