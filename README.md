@@ -20,9 +20,9 @@ Para el desarrollo de la aplicación se ha tomado como referencia las siguientes
 
 ## Frontend de la Aplicacion
 
-![Lista de Usuarios](src/assets/Screenshot_1.png)
-![Lista de Posts](src/assets/Screenshot_2.png)
-![Lista de Comentarios](src/assets/Screenshot_3.png)
+![Lista de Usuarios](src/assets/static/Screenshot_1.png)
+![Lista de Posts](src/assets/static/Screenshot_2.png)
+![Lista de Comentarios](src/assets/static/Screenshot_3.png)
 
 ### Compila y recarga los archivos en modo Desarrollo
 
@@ -38,4 +38,5 @@ npm run build
 
 ### Configuración Personalizada
 
-See [Configuration Reference](https://cli.vuejs.org/config/).
+[Ver Configuración](https://cli.vuejs.org/config/).
+[Ver Apis de Referencia](https://jsonplaceholder.typicode.com/).
